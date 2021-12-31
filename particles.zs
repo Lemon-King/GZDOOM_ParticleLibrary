@@ -147,6 +147,9 @@ class ParticleGenerator: Actor {
                     String tActor = CustomActorType(i);
                     ActorParticle p = ActorParticle(Spawn(tActor));
                     if (p) {
+                        if (self.owner) {
+                            p.target = self.owner;
+                        }
                         p.c_lifetime = ticksLifetime;
                         p.c_size = c_size;
                         p.c_color = rgb;
@@ -175,6 +178,10 @@ class ParticleGenerator: Actor {
 
     void Remove() {
         self.Destroy();
+    }
+
+    void SetOwner(Actor nextOwner) {
+        self.owner = nextOwner;
     }
 
     // Programmatic overrides for more finely controlled particle effects
