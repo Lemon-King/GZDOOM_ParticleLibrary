@@ -1,12 +1,9 @@
 /*
-** Simple Quake Engine like Particle FX Generator
-** With support for Actor Particles
 **
-** "If particles used real sprites instead of blocks, they could be much
-** more useful." - Marisa Heit
+** Simple Quake Engine like Particle FX Generator with support for Actor Particles
+**
+** "If particles used real sprites instead of blocks, they could be much more useful." - Marisa Heit
 ** https://github.com/coelckers/gzdoom/blob/4bcea0ab783c667940008a5cab6910b7a826f08c/src/playsim/p_effect.cpp#L33
-**
-** https://zdoom.org/wiki/A_SpawnParticle
 **
 */
 
