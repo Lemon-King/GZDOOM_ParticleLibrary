@@ -34,6 +34,8 @@
 class ParticleGenerator: Actor {
     Array<String> actorParticleTypes;
 
+    Actor owner;
+
     int amount;
     int rate;
     int ticks;
